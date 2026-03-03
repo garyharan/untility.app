@@ -14,12 +14,47 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            transition: background-color 0.3s ease;
+        }
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #ccc;
+                color: #333;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: white;
+            }
         }
         .container {
             text-align: center;
             padding: 2rem;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 26.67%;
+            margin: 0 auto 2rem;
+            display: block;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        @media (prefers-color-scheme: light) {
+            .app-icon-dark {
+                display: none;
+            }
+            .app-icon-light {
+                display: block;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .app-icon-dark {
+                display: block;
+            }
+            .app-icon-light {
+                display: none;
+            }
         }
         h1 {
             font-size: 3rem;
@@ -33,6 +68,8 @@
 </head>
 <body>
     <div class="container">
+        <img src="favicon-light.png" alt="Untility App Icon" class="app-icon app-icon-light">
+        <img src="favicon-dark.png" alt="Untility App Icon" class="app-icon app-icon-dark">
         <h1>Untility</h1>
         <p>Beautiful event countdown widgets for your iPhone home screen and lock screen.</p>
         <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.8;">Track the days until your most important moments with customizable themes and elegant design.</p>
