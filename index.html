@@ -1,78 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Untility.app</title>
-    <link rel="icon" href="favicon-light.png" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="favicon-dark.png" media="(prefers-color-scheme: dark)">
+    <link
+      rel="icon"
+      href="favicon-light.png"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      href="favicon-dark.png"
+      media="(prefers-color-scheme: dark)"
+    />
     <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        transition: background-color 0.3s ease;
+      }
+      @media (prefers-color-scheme: light) {
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            transition: background-color 0.3s ease;
+          background-color: #ccc;
+          color: #333;
         }
-        @media (prefers-color-scheme: light) {
-            body {
-                background-color: #ccc;
-                color: #333;
-            }
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #333;
+          color: white;
         }
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #333;
-                color: white;
-            }
+      }
+      .container {
+        text-align: center;
+        padding: 2rem;
+      }
+      .app-icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 26.67%;
+        margin: 0 auto 2rem;
+        display: block;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      @media (prefers-color-scheme: light) {
+        .app-icon-dark {
+          display: none;
         }
-        .container {
-            text-align: center;
-            padding: 2rem;
+        .app-icon-light {
+          display: block;
         }
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 26.67%;
-            margin: 0 auto 2rem;
-            display: block;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      @media (prefers-color-scheme: dark) {
+        .app-icon-dark {
+          display: block;
         }
-        @media (prefers-color-scheme: light) {
-            .app-icon-dark {
-                display: none;
-            }
-            .app-icon-light {
-                display: block;
-            }
+        .app-icon-light {
+          display: none;
         }
-        @media (prefers-color-scheme: dark) {
-            .app-icon-dark {
-                display: block;
-            }
-            .app-icon-light {
-                display: none;
-            }
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <img src="favicon-light.png" alt="Untility App Icon" class="app-icon app-icon-light">
-        <img src="favicon-dark.png" alt="Untility App Icon" class="app-icon app-icon-dark">
-        <h1>Untility</h1>
-        <p>Beautiful event countdown widgets for your iPhone home screen and lock screen.</p>
-        <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.8;">Track the days until your most important moments with customizable themes and elegant design.</p>
+      <img
+        src="favicon-light.png"
+        alt="Untility App Icon"
+        class="app-icon app-icon-light"
+      />
+      <img
+        src="favicon-dark.png"
+        alt="Untility App Icon"
+        class="app-icon app-icon-dark"
+      />
+      <h1>Untility</h1>
+      <p>
+        Beautiful event countdown widgets for your iPhone home screen and lock
+        screen.
+      </p>
+      <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.8">
+        Track the days until your most important moments with customizable
+        themes and elegant design.
+      </p>
+      <p style="margin-top: 3rem; font-size: 0.9rem; opacity: 0.6">
+        <a href="terms.html" style="text-decoration: none; margin: 0 1rem"
+          >Terms of Service</a
+        >
+        |
+        <a href="privacy.html" style="text-decoration: none; margin: 0 1rem"
+          >Privacy Policy</a
+        >
+      </p>
     </div>
-</body>
+  </body>
 </html>
