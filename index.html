@@ -74,6 +74,23 @@
         font-size: 1.2rem;
         opacity: 0.9;
       }
+      a {
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+      @media (prefers-color-scheme: light) {
+        a {
+          color: #0066cc;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        a {
+          color: #66b3ff;
+        }
+      }
     </style>
   </head>
   <body>
@@ -98,13 +115,9 @@
         themes and elegant design.
       </p>
       <p style="margin-top: 3rem; font-size: 0.9rem; opacity: 0.6">
-        <a href="terms.html" style="text-decoration: none; margin: 0 1rem"
-          >Terms of Service</a
-        >
+        <a href="terms.html" style="margin: 0 1rem">Terms of Service</a>
         |
-        <a href="privacy.html" style="text-decoration: none; margin: 0 1rem"
-          >Privacy Policy</a
-        >
+        <a href="privacy.html" style="margin: 0 1rem">Privacy Policy</a>
       </p>
     </div>
   </body>
