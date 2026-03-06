@@ -91,6 +91,35 @@
           color: #66b3ff;
         }
       }
+      .support-button {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+      @media (prefers-color-scheme: light) {
+        .support-button {
+          background-color: #0066cc;
+          color: white;
+        }
+        .support-button:hover {
+          background-color: #0052a3;
+          opacity: 1;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        .support-button {
+          background-color: #66b3ff;
+          color: #333;
+        }
+        .support-button:hover {
+          background-color: #80c1ff;
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
@@ -114,6 +143,9 @@
         Track the days until your most important moments with customizable
         themes and elegant design.
       </p>
+      <a href="mailto:gary.haran@gmail.com?subject=Untility.app%20support%20question" class="support-button">
+        Email Support
+      </a>
       <p style="margin-top: 3rem; font-size: 0.9rem; opacity: 0.6">
         <a href="terms.html" style="margin: 0 1rem">Terms of Service</a>
         |
